@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.rohitrj.styles.ui.home.HomeFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.home.HomeFragment"
         android:label="home_fragment"
         tools:layout="@layout/home_fragment" >
         <action
@@ -25,22 +25,22 @@
     </fragment>
     <fragment
         android:id="@+id/cartFragment"
-        android:name="com.rohitrj.styles.ui.cart.CartFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.cart.CartFragment"
         android:label="My Cart"
         tools:layout="@layout/cart_fragment" />
     <fragment
         android:id="@+id/likedFragment"
-        android:name="com.rohitrj.styles.ui.liked.LikedFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.liked.LikedFragment"
         android:label="Likes"
         tools:layout="@layout/liked_fragment" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.rohitrj.styles.ui.userprofile.ProfileFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.userprofile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/profile_fragment" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.rohitrj.styles.ui.search.SearchFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.search.SearchFragment"
         android:label="Search"
         tools:layout="@layout/search_fragment" />
 </navigation>
