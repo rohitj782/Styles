@@ -44,7 +44,8 @@
         <activity
             android:name="com.rohitrj.styles.ui.mainactivity.MainActivity"
             android:resizeableActivity="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
 
         <receiver android:name="com.rohitrj.styles.internals.utils.NetworkChangeReceiver" >
             <intent-filter>

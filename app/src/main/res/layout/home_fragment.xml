@@ -23,12 +23,12 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="230dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/cover_pic" />
+            app:srcCompat="@drawable/cover1" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button_men"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@android:color/transparent"
@@ -37,7 +37,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_women"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@android:color/transparent"
@@ -46,7 +46,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button_kids"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="kids"
@@ -54,7 +54,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button_sale"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="sale"
@@ -68,12 +68,13 @@
             android:gravity="center"
             android:text="Flat 40% to 60% off on sales"
             android:textColor="@android:color/black" />
+
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="230dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/cover_pic_4" />
+            app:srcCompat="@drawable/kids1" />
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
@@ -86,9 +87,9 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="230dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/cover_pic_3" />
+            app:srcCompat="@drawable/women3" />
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
@@ -97,12 +98,20 @@
             android:gravity="center"
             android:text="Flat 20% off on all orders above $4999"
             android:textColor="@android:color/black" />
+
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="230dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/cover_pic_2" />
+            app:srcCompat="@drawable/men1" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cover1" />
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
@@ -115,9 +124,15 @@
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="230dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/cover_pic_5" />
+            app:srcCompat="@drawable/women1" />
 
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cover2" />
     </LinearLayout>
 </ScrollView>

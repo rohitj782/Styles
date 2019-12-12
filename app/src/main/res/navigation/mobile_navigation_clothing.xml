@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.rohitrj.styles.ui.mainactivity.home.HomeFragment"
-        android:label="home_fragment"
-        tools:layout="@layout/home_fragment" >
+        android:label="Styles"
+        tools:layout="@layout/home_fragment">
         <action
             android:id="@+id/action_homeFragment_to_cartFragment2"
             app:destination="@id/cartFragment" />
@@ -22,6 +22,18 @@
         <action
             android:id="@+id/action_homeFragment_to_searchFragment2"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mensFragment"
+            app:destination="@id/mensFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_kidsFragment"
+            app:destination="@id/kidsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_salesFragment"
+            app:destination="@id/salesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_womenFragment"
+            app:destination="@id/womenFragment" />
     </fragment>
     <fragment
         android:id="@+id/cartFragment"
@@ -31,16 +43,33 @@
     <fragment
         android:id="@+id/likedFragment"
         android:name="com.rohitrj.styles.ui.mainactivity.liked.LikedFragment"
-        android:label="Likes"
+        android:label="My Likes"
         tools:layout="@layout/liked_fragment" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.rohitrj.styles.ui.mainactivity.userprofile.ProfileFragment"
-        android:label="Profile"
+        android:label="My Profile"
         tools:layout="@layout/profile_fragment" />
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.rohitrj.styles.ui.mainactivity.search.SearchFragment"
         android:label="Search"
         tools:layout="@layout/search_fragment" />
+    <fragment
+        android:id="@+id/mensFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.mens.MensFragment"
+        android:label="Men's fashion"
+        tools:layout="@layout/mens_fragment" />
+    <fragment
+        android:id="@+id/kidsFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.kids.KidsFragment"
+        android:label="Kid's Clothing" />
+    <fragment
+        android:id="@+id/salesFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.sales.SalesFragment"
+        android:label="Sales" />
+    <fragment
+        android:id="@+id/womenFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.women.WomenFragment"
+        android:label="Women's fashion" />
 </navigation>

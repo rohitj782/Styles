@@ -36,6 +36,7 @@
         <activity
             android:name=".ui.mainactivity.MainActivity"
             android:resizeableActivity="false"
+            android:theme="@style/AppThemeNoActionBar"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity"
             tools:targetApi="n" />

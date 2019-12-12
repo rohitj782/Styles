@@ -9,6 +9,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +23,7 @@ import androidx.navigation.ui.onNavDestinationSelected
 import com.rohitrj.styles.R
 import com.rohitrj.styles.internals.utils.NetworkChangeReceiver
 import com.rohitrj.styles.ui.erroractivity.ErrorActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 private const val TAG = "MainActivity"
@@ -35,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setSupportActionBar(toolbar)
 
         Log.i(TAG, "onCreate: Started")
         navController = Navigation.findNavController(
@@ -42,6 +46,7 @@ class MainActivity : AppCompatActivity() {
             R.id.fragment
         )
 
+        NavigationUI.setupWithNavController(toolbar, navController,null)
         context = this
         mNetworkReceiver = NetworkChangeReceiver();
         registerNetworkBroadcast();
@@ -93,5 +98,11 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return item.onNavDestinationSelected(findNavController(R.id.fragment))
                 || super.onOptionsItemSelected(item)
+    }
+
+    fun showItem(view: View) {
+        val buttonInfo: Button = view.findViewById(view.id)
+        val infoText = buttonInfo.text
+        Toast.makeText(context,infoText, Toast.LENGTH_SHORT).show()
     }
 }

@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.Navigation
 import com.rohitrj.styles.R
+import kotlinx.android.synthetic.main.home_fragment.*
 
 
 class HomeFragment : Fragment() {
@@ -27,6 +29,31 @@ class HomeFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
+
+        button_men.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(
+                    HomeFragmentDirections.actionHomeFragmentToMensFragment()
+                )
+        }
+        button_women.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(
+                    HomeFragmentDirections.actionHomeFragmentToWomenFragment()
+                )
+        }
+        button_kids.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(
+                    HomeFragmentDirections.actionHomeFragmentToKidsFragment()
+                )
+        }
+        button_sale.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(
+                    HomeFragmentDirections.actionHomeFragmentToSalesFragment()
+                )
+        }
     }
 
 }

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.mainactivity.mens.MensFragment">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#EfFeFF"
+            android:gravity="center"
+            android:text="Flat 10% off on all orders above $999"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cover1" />
+
+        <Button
+            android:id="@+id/button_item_1"
+            android:onClick="showItem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+            android:paddingEnd="25dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:textAllCaps="false"
+            android:gravity="start|center_vertical"
+            android:paddingStart="25dp"
+            android:text="Men"/>
+        <Button
+            android:id="@+id/button_item_2"
+            android:onClick="showItem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+            android:paddingEnd="25dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:textAllCaps="false"
+            android:gravity="start|center_vertical"
+            android:paddingStart="25dp"
+            android:text="Women"/>
+        <Button
+            android:id="@+id/button_item_3"
+            android:onClick="showItem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+            android:paddingEnd="25dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:textAllCaps="false"
+            android:gravity="start|center_vertical"
+            android:paddingStart="25dp"
+            android:text="Kids"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#EfFeFF"
+            android:gravity="center"
+            android:text="Flat 15% off on winter wears"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/imageViewmen1"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/men4" />
+
+        <ImageView
+            android:id="@+id/imageViewmen2"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cover2" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#EfFeFF"
+            android:gravity="center"
+            android:text="Flat 20% off on all orders above $4999"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/imageViewmen3"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/men1" />
+
+        <ImageView
+            android:id="@+id/imageViewmen4"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/kids2" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
