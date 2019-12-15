@@ -4,12 +4,12 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/icon_splash.jpg"
     },
     {
-        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/menu_toolbar_main_menu.xml.flat",
-        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/menu/toolbar_main_menu.xml"
-    },
-    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/menu_toolbar_main_menu.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/menu/toolbar_main_menu.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_activity_error.xml.flat",
@@ -32,12 +32,16 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/men4.jpg"
     },
     {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_cover1.jpg.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/cover1.jpg"
+    },
+    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_men1.jpg.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/men1.jpg"
     },
     {
-        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_cover1.jpg.flat",
-        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/cover1.jpg"
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_ic_baseline_favorite_24.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/ic_baseline_favorite_24.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_kids_fragment.xml.flat",
@@ -56,12 +60,12 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/activity_splash.xml"
     },
     {
-        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_kids2.jpg.flat",
-        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/kids2.jpg"
-    },
-    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_ic_outline_navigate_next_24.xml.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/ic_outline_navigate_next_24.xml"
+    },
+    {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_kids2.jpg.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/kids2.jpg"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/navigation_mobile_navigation_clothing.xml.flat",
@@ -74,6 +78,10 @@
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_ic_outline_close_24.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/ic_outline_close_24.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_mens_fragment.xml.flat",
@@ -108,6 +116,10 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/women_fragment.xml"
     },
     {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_ic_outline_filter_list_24.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/ic_outline_filter_list_24.xml"
+    },
+    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_women1.jpg.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/women1.jpg"
     },
@@ -126,6 +138,10 @@
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_cover2.jpg.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/cover2.jpg"
+    },
+    {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_item_list_fragment.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/item_list_fragment.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
@@ -156,8 +172,8 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_ads_layout.xml.flat",
-        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/ads_layout.xml"
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_item_display.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/item_display.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -174,6 +190,10 @@
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_user_24.xml.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/user_24.xml"
+    },
+    {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_filter_and_sort_fragment.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/filter_and_sort_fragment.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",

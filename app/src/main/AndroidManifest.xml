@@ -16,6 +16,7 @@
         <activity
             android:name=".ui.erroractivity.ErrorActivity"
             android:resizeableActivity="false"
+            android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBar"
             tools:ignore="LockedOrientationActivity"
@@ -41,7 +42,7 @@
             tools:ignore="LockedOrientationActivity"
             tools:targetApi="n" />
 
-        <receiver android:name=".internals.utils.NetworkChangeReceiver">
+        <receiver android:name=".reciever.NetworkChangeReceiver">
             <intent-filter>
                 <action
                     android:name="android.net.conn.CONNECTIVITY_CHANGE"

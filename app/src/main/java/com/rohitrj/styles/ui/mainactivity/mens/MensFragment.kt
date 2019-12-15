@@ -8,8 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.navigation.Navigation
 
 import com.rohitrj.styles.R
+import kotlinx.android.synthetic.main.mens_fragment.*
 
 class MensFragment : Fragment() {
 
@@ -30,6 +32,12 @@ class MensFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MensViewModel::class.java)
         // TODO: Use the ViewModel
+
+        //TOdo remove later
+        button_item_1.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(MensFragmentDirections.actionMensFragmentToItemListFragment())
+        }
     }
 
 }

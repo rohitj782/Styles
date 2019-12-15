@@ -26,6 +26,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.rohitrj.styles.ui.erroractivity.ErrorActivity"
+            android:launchMode="singleInstance"
             android:resizeableActivity="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBar" />
@@ -46,7 +47,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBar" />
 
-        <receiver android:name="com.rohitrj.styles.internals.utils.NetworkChangeReceiver" >
+        <receiver android:name="com.rohitrj.styles.reciever.NetworkChangeReceiver" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>

@@ -59,17 +59,47 @@
         android:id="@+id/mensFragment"
         android:name="com.rohitrj.styles.ui.mainactivity.mens.MensFragment"
         android:label="Men's fashion"
-        tools:layout="@layout/mens_fragment" />
+        tools:layout="@layout/mens_fragment" >
+        <action
+            android:id="@+id/action_mensFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/kidsFragment"
         android:name="com.rohitrj.styles.ui.mainactivity.kids.KidsFragment"
-        android:label="Kid's Clothing" />
+        android:label="Kid's Clothing" >
+        <action
+            android:id="@+id/action_kidsFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/salesFragment"
         android:name="com.rohitrj.styles.ui.mainactivity.sales.SalesFragment"
-        android:label="Sales" />
+        android:label="Sales" >
+        <action
+            android:id="@+id/action_salesFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/womenFragment"
         android:name="com.rohitrj.styles.ui.mainactivity.women.WomenFragment"
-        android:label="Women's fashion" />
+        android:label="Women's fashion" >
+        <action
+            android:id="@+id/action_womenFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.itemlist.ItemListFragment"
+        android:label="item_list_fragment"
+        tools:layout="@layout/item_list_fragment" >
+        <action
+            android:id="@+id/action_itemListFragment_to_filterAndSortFragment"
+            app:destination="@id/filterAndSortFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterAndSortFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.filterandsort.FilterAndSortFragment"
+        android:label="filter_and_sort_fragment"
+        tools:layout="@layout/filter_and_sort_fragment" />
 </navigation>

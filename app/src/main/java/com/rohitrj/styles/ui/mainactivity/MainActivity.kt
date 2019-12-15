@@ -6,22 +6,21 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.net.ConnectivityManager
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.onNavDestinationSelected
 import com.rohitrj.styles.R
-import com.rohitrj.styles.internals.utils.NetworkChangeReceiver
+import com.rohitrj.styles.reciever.NetworkChangeReceiver
 import com.rohitrj.styles.ui.erroractivity.ErrorActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -46,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             R.id.fragment
         )
 
-        NavigationUI.setupWithNavController(toolbar, navController,null)
+        NavigationUI.setupWithNavController(toolbar, navController, null)
         context = this
         mNetworkReceiver = NetworkChangeReceiver();
         registerNetworkBroadcast();
@@ -64,26 +63,25 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    companion object{
-        fun showError(){
-            val intent = Intent(context,ErrorActivity::class.java)
+    companion object {
+        fun showError() {
+            val intent = Intent(context, ErrorActivity::class.java)
             context.startActivity(intent)
         }
     }
 
-    override fun onResume() {
-        super.onResume()
-        registerNetworkBroadcast()
-    }
+    var handler = Handler()
+    var runnable = Runnable { registerNetworkBroadcast() }
 
-    override fun onPause() {
-        super.onPause()
-        unregisterNetworkChanges()
+    override fun onRestart() {
+        super.onRestart()
+        handler.postDelayed(runnable,2000)
     }
 
     override fun onStop() {
         super.onStop()
         unregisterNetworkChanges()
+        handler.removeCallbacks(runnable)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -103,6 +101,6 @@ class MainActivity : AppCompatActivity() {
     fun showItem(view: View) {
         val buttonInfo: Button = view.findViewById(view.id)
         val infoText = buttonInfo.text
-        Toast.makeText(context,infoText, Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, infoText, Toast.LENGTH_SHORT).show()
     }
 }
