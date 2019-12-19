@@ -7,12 +7,14 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.rohitrj.styles.R
 import com.rohitrj.styles.data.models.ItemInfo
+import com.rohitrj.styles.ui.mainactivity.itemlist.ItemListFragmentDirections
 
 class ItemDisplayAdapter(var list: ArrayList<ItemInfo>) :
-    RecyclerView.Adapter<ItemDisplayAdapter.MyViewHolder>() {
+    RecyclerView.Adapter<ItemDisplayAdapter.MyViewHolder>(), View.OnClickListener {
 
     var itemList = this.list
 
@@ -51,7 +53,7 @@ class ItemDisplayAdapter(var list: ArrayList<ItemInfo>) :
 
             if (item.liked) {
                 liked.setImageResource(R.drawable.ic_baseline_favorite_24)
-            }else{
+            } else {
                 liked.setImageResource(R.drawable.ic_outline_favorite_border_24)
             }
             liked.setOnClickListener {
@@ -63,6 +65,8 @@ class ItemDisplayAdapter(var list: ArrayList<ItemInfo>) :
                     liked.setImageResource(R.drawable.ic_baseline_favorite_24)
                 }
             }
+
+            thumbnail.setOnClickListener(this@ItemDisplayAdapter)
         }
 
         private fun updateItem(item: ItemInfo, position: Int, liked: Boolean) {
@@ -76,5 +80,12 @@ class ItemDisplayAdapter(var list: ArrayList<ItemInfo>) :
             notifyDataSetChanged()
         }
 
+
+    }
+
+    override fun onClick(v: View?) {
+        Navigation.findNavController(v!!).navigate(
+            ItemListFragmentDirections.actionItemListFragmentToItemDetailFragmentFragment()
+        )
     }
 }

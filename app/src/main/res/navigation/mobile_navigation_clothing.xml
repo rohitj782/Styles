@@ -96,10 +96,18 @@
         <action
             android:id="@+id/action_itemListFragment_to_filterAndSortFragment"
             app:destination="@id/filterAndSortFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_itemDetailFragmentFragment"
+            app:destination="@id/itemDetailFragmentFragment" />
     </fragment>
     <fragment
         android:id="@+id/filterAndSortFragment"
         android:name="com.rohitrj.styles.ui.mainactivity.filterandsort.FilterAndSortFragment"
         android:label="filter_and_sort_fragment"
         tools:layout="@layout/filter_and_sort_fragment" />
+    <fragment
+        android:id="@+id/itemDetailFragmentFragment"
+        android:name="com.rohitrj.styles.ui.mainactivity.details.ItemDetailFragmentFragment"
+        android:label="item_detail_fragment"
+        tools:layout="@layout/item_detail_fragment" />
 </navigation>
