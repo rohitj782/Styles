@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable-v24_buy_with_googlepay_button_content.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable-v24/buy_with_googlepay_button_content.xml"
+    },
+    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_icon_splash.jpg.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/icon_splash.jpg"
     },
@@ -40,6 +44,10 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/men4.jpg"
     },
     {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable-v24_googlepay_button_no_shadow_background_image.9.png.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable-v24/googlepay_button_no_shadow_background_image.9.png"
+    },
+    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_cover1.jpg.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/cover1.jpg"
     },
@@ -58,6 +66,10 @@
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_kids_fragment.xml.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/kids_fragment.xml"
+    },
+    {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable-v24_googlepay_button_background.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable-v24/googlepay_button_background.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
@@ -88,6 +100,10 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/navigation/mobile_navigation_clothing.xml"
     },
     {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable-v24_googlepay_button_content.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable-v24/googlepay_button_content.xml"
+    },
+    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_sales_fragment.xml.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/sales_fragment.xml"
     },
@@ -110,6 +126,10 @@
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_buy_with_googlepay_button.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/buy_with_googlepay_button.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -172,8 +192,20 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/easy_iron_shirt_slim_fit2.png"
     },
     {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable-v24_activity_checkout.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable-v24/activity_checkout.xml"
+    },
+    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_item_list_fragment.xml.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/item_list_fragment.xml"
+    },
+    {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_activity_checkout.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/activity_checkout.xml"
+    },
+    {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable-v24_googlepay_button_overlay.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable-v24/googlepay_button_overlay.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
@@ -212,6 +244,10 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/layout/item_display.xml"
     },
     {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable-v24_googlepay_button_background_image.9.png.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable-v24/googlepay_button_background_image.9.png"
+    },
+    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
@@ -240,12 +276,16 @@
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_ic_outline_shopping_cart_white.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/ic_outline_shopping_cart_white.xml"
+    },
+    {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable_ic_outline_shopping_cart_white.xml.flat",
-        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable/ic_outline_shopping_cart_white.xml"
+        "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/drawable-v24_googlepay_button_no_shadow_background.xml.flat",
+        "source": "/mnt/sda3/Android Projects/Styles/app/src/main/res/drawable-v24/googlepay_button_no_shadow_background.xml"
     },
     {
         "merged": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",

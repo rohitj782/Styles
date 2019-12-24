@@ -107,6 +107,7 @@ class ItemDetailFragmentFragment : Fragment() {
 
         recycler_item_list.layoutManager = GridLayoutManager(context, 2,
             GridLayoutManager.VERTICAL,false)
+        recycler_item_list.setHasFixedSize(true)
         recycler_item_list.adapter = ItemDisplayAdapter(itemList)
 
     }

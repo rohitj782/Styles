@@ -34,6 +34,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.checkoutactivity.CheckoutActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            tools:targetApi="n"/>
         <activity
             android:name=".ui.mainactivity.MainActivity"
             android:resizeableActivity="false"
@@ -49,6 +54,9 @@
                     tools:ignore="BatteryLife" />
             </intent-filter>
         </receiver>
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
     </application>
 
 </manifest>

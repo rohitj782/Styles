@@ -14,6 +14,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
@@ -29,6 +30,7 @@ private const val TAG = "MainActivity"
 private lateinit var navController: NavController
 private var mNetworkReceiver: BroadcastReceiver? = null
 private lateinit var context: Context
+private lateinit var drawerLayout: DrawerLayout
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -44,8 +46,8 @@ class MainActivity : AppCompatActivity() {
             this,
             R.id.fragment
         )
-
-        NavigationUI.setupWithNavController(toolbar, navController, null)
+        drawerLayout = findViewById(R.id.drawer_layout)
+        NavigationUI.setupWithNavController(toolbar, navController, drawerLayout)
         context = this
         mNetworkReceiver = NetworkChangeReceiver();
         registerNetworkBroadcast();
@@ -53,6 +55,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun registerNetworkBroadcast() {
         registerReceiver(mNetworkReceiver, IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION))
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
     }
 
     private fun unregisterNetworkChanges() {
@@ -75,7 +81,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        handler.postDelayed(runnable,2000)
+        handler.postDelayed(runnable, 2000)
     }
 
     override fun onStop() {

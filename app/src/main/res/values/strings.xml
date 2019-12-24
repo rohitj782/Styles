@@ -3,5 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="googlepay_button_content_description" translatable="false">Google Pay</string>
+    <string name="buy_with_googlepay_button_content_description" translatable="false">Buy with Google Pay</string>
     <string name="details">The world\'s oldest preserved garment, discovered by Flinders Petrie, is a highly sophisticated linen shirt from a First Dynasty Egyptian tomb at Tarkan, dated to c. 3000 BC: the shoulders and sleeves have been finely pleated to give form-fitting trimness while allowing the wearer room to move. The small fringe formed during weaving along one edge of the cloth has been placed by the designer to decorate the neck opening and side seam.</string>
 </resources>

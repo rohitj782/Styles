@@ -8,9 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 
 import com.rohitrj.styles.R
+import com.rohitrj.styles.databinding.MensFragmentBinding
 import kotlinx.android.synthetic.main.mens_fragment.*
 
 class MensFragment : Fragment() {
@@ -25,7 +27,16 @@ class MensFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.mens_fragment, container, false)
+        val binding: MensFragmentBinding = DataBindingUtil.inflate(
+            inflater, R.layout.mens_fragment, container, false
+        )
+
+        val viewModel = ViewModelProviders.of(this).get(MensViewModel::class.java)
+
+        binding.menViewModel = viewModel
+        binding.lifecycleOwner = this.viewLifecycleOwner
+
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -33,7 +44,7 @@ class MensFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(MensViewModel::class.java)
         // TODO: Use the ViewModel
 
-        //TOdo remove later
+//        //TOdo remove later
         button_item_1.setOnClickListener {
             Navigation.findNavController(it)
                 .navigate(MensFragmentDirections.actionMensFragmentToItemListFragment())

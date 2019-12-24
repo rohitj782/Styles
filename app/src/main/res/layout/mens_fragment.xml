@@ -1,244 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
 
-    <LinearLayout
+        <variable
+            name="menViewModel"
+            type="com.rohitrj.styles.ui.mainactivity.mens.MensViewModel" />
+    </data>
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:context=".ui.mainactivity.mens.MensFragment">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="#EfFeFF"
-            android:gravity="center"
-            android:text="Flat 10% off on all orders above $999"
-            android:textColor="@android:color/black" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".ui.mainactivity.mens.MensFragment">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="260dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/men3" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#EfFeFF"
+                android:gravity="center"
+                android:text="Flat 10% off on all orders above $999"
+                android:textColor="@android:color/black" />
 
-        <Button
-            android:id="@+id/button_item_1"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="New Year Sale 50% off"/>
-        <Button
-            android:id="@+id/button_item_2"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="The Party Edit"/>
-        <Button
-            android:id="@+id/button_item_3"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="New Arrivals"/>
-        <Button
-            android:id="@+id/button_item_4"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="View All"/>
-        <Button
-            android:id="@+id/button_item_5"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="Sale"/>
-        <Button
-            android:id="@+id/button_item_6"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="T-Shirts"/>
-        <Button
-            android:id="@+id/button_item_7"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="Blazers"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/men3" />
 
-        <Button
-            android:id="@+id/button_item_8"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="Jackets &amp; Coats"/>
+            <Button
+                android:id="@+id/button_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="New Year Sale 50% off"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
-        <Button
-            android:id="@+id/button_item_9"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="Trousers"/>
+            <Button
+                android:id="@+id/button_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="The Party Edit"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
-        <Button
-            android:id="@+id/button_item_10"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="Jeans"/>
+            <Button
+                android:id="@+id/button_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="New Arrivals"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
-        <Button
-            android:id="@+id/button_item_11"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="Swimwear"/>
+            <Button
+                android:id="@+id/button_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="View All"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
-        <Button
-            android:id="@+id/button_item_12"
-            android:onClick="showItem"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:paddingEnd="25dp"
-            android:textColor="#000000"
-            android:background="#ffffff"
-            android:textAllCaps="false"
-            android:gravity="start|center_vertical"
-            android:paddingStart="25dp"
-            android:text="Shoes"/>
+            <Button
+                android:id="@+id/button_item_5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="Sale"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
-        <Button
-            android:id="@+id/button_item_13"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="#ffffff"
-            android:drawableEnd="@drawable/ic_outline_navigate_next_24"
-            android:gravity="start|center_vertical"
-            android:onClick="showItem"
-            android:paddingStart="25dp"
-            android:paddingEnd="25dp"
-            android:text="Accessories"
-            android:textAllCaps="false"
-            android:textColor="#000000" />
+            <Button
+                android:id="@+id/button_item_6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="T-Shirts"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
+            <Button
+                android:id="@+id/button_item_7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="Blazers"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
+            <Button
+                android:id="@+id/button_item_8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="Jackets &amp; Coats"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
+            <Button
+                android:id="@+id/button_item_9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="Trousers"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
-        <ImageView
-            android:id="@+id/imageViewmen1"
-            android:layout_width="match_parent"
-            android:layout_height="260dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/men1" />
+            <Button
+                android:id="@+id/button_item_10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="Jeans"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
-        <ImageView
-            android:id="@+id/imageViewmen2"
-            android:layout_width="match_parent"
-            android:layout_height="260dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/men4" />
+            <Button
+                android:id="@+id/button_item_11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="Swimwear"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
-        <ImageView
-            android:id="@+id/imageViewmen4"
-            android:layout_width="match_parent"
-            android:layout_height="260dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/men2" />
+            <Button
+                android:id="@+id/button_item_12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="Shoes"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="#EfFeFF"
-            android:gravity="center"
-            android:text="Flat 20% off on all orders above $4999"
-            android:textColor="@android:color/black" />
+            <Button
+                android:id="@+id/button_item_13"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:drawableEnd="@drawable/ic_outline_navigate_next_24"
+                android:gravity="start|center_vertical"
+                android:onClick="showItem"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="Accessories"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
 
 
+            <ImageView
+                android:id="@+id/imageViewmen1"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/men1" />
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/imageViewmen2"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/men4" />
 
-</ScrollView>
+            <ImageView
+                android:id="@+id/imageViewmen4"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/men2" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#EfFeFF"
+                android:gravity="center"
+                android:text="Flat 20% off on all orders above $4999"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

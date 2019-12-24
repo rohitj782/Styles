@@ -4,6 +4,23 @@
             "outputFile": "/mnt/sda3/Android Projects/Styles/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml",
             "map": [
                 {
+                    "source": "/home/rj/.gradle/caches/transforms-2/files-2.1/f146af2767ec1c086c2cbf5597d03ad6/jetified-play-services-wallet-18.0.0/res/values-ro/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "202",
+                        "endColumns": "99",
+                        "endOffsets": "301"
+                    },
+                    "to": {
+                        "startLines": "51",
+                        "startColumns": "4",
+                        "startOffsets": "6018",
+                        "endColumns": "103",
+                        "endOffsets": "6117"
+                    }
+                },
+                {
                     "source": "/home/rj/.gradle/caches/transforms-2/files-2.1/0901fd823a75072a080e2a56de836d5e/core-1.1.0/res/values-ro/values-ro.xml",
                     "from": {
                         "startLines": "2",

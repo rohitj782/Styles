@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.mainactivity.itemlist.ItemListFragment"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:id="@+id/filterButton"
+        android:layout_height="60dp"
+        android:gravity="start|center_vertical"
+        android:text="Filter &amp; Sort"
+        android:drawableEnd="@drawable/ic_outline_filter_list_24"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_item_list"/>
+
+</FrameLayout>
